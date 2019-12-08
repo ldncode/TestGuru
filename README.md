@@ -1,24 +1,14 @@
-# README
+# TestGuru
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Список сущностей проекта:
 
-Things you may want to cover:
+* Администраторы
 
-* Ruby version
+* Пользователи
 
-* System dependencies
+* Тесты
 
-* Configuration
+* Вопросы
 
-* Database creation
+* Ответы
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
