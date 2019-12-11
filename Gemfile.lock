@@ -102,6 +102,7 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
+    pg (0.18.4)
     public_suffix (4.0.1)
     puma (3.12.2)
     rack (2.0.7)
@@ -205,6 +206,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
+  pg
   puma (~> 3.11)
   rails (~> 6.0.0)
   sass-rails (~> 5)
