@@ -1,2 +1,0 @@
-class TestUser < ApplicationRecord
-end
