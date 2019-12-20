@@ -9,9 +9,9 @@
 
 user, user2, user3 = User.create(
     [
-        { username: 'Ivan'},
-        { username: 'Vasiliy'},
-        { username: 'Mariya'}
+        { username: 'Ivan', password: 'ivan' },
+        { username: 'Vasiliy', password: 'vasiliy' },
+        { username: 'Mariya', password: 'mariya' }
     ]
 )
 
@@ -33,7 +33,7 @@ q1, q2, q3 = Question.create(
     ]
 )
 
-replies = Reply.create(
+answers = Answer.create(
     [
         { body: 'Да', question_id: q1, correct: false },
         { body: 'Нет, это язык разметки',  question_id: q1, correct: true },
