@@ -2,6 +2,8 @@
 
 one:
   body: MyString
+  question: one
 
 two:
   body: MyString
+  question: two

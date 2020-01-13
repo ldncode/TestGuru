@@ -9,9 +9,9 @@
 
 user, user2, user3 = User.create(
     [
-        { username: 'Ivan'},
-        { username: 'Vasiliy'},
-        { username: 'Mariya'}
+        { username: 'Ivan', password: 'ivan' },
+        { username: 'Vasiliy', password: 'vasiliy' },
+        { username: 'Mariya', password: 'mariya' }
     ]
 )
 
@@ -19,9 +19,9 @@ html, ruby, swift = Category.create([{ title: 'Html'}, { title: 'Ruby'},{ title:
 
 html_test, ruby_test, swift_test = Test.create(
     [
-        { title: 'Html', level: 1, category_id: html.id, user_id: user.id },
-        { title: 'Ruby', level: 2, category_id: ruby.id, user_id: user2.id },
-        { title: 'Swift', level: 3, category_id: swift.id, user_id: user3.id }
+        { title: 'Html', level: 1, category_id: html.id },
+        { title: 'Ruby', level: 2, category_id: ruby.id },
+        { title: 'Swift', level: 3, category_id: swift.id }
     ]
 )
 
@@ -33,7 +33,7 @@ q1, q2, q3 = Question.create(
     ]
 )
 
-replies = Reply.create(
+answers = Answer.create(
     [
         { body: 'Да', question_id: q1, correct: false },
         { body: 'Нет, это язык разметки',  question_id: q1, correct: true },
