@@ -6,6 +6,9 @@ class Test < ApplicationRecord
   belongs_to :author, class_name: 'User'
 
   def self.category_tests(title)
-    joins('JOIN categories ON categories.id = tests.category_id').where('categories.title = ?', title)
+    joins(:category)
+        .where(categories: { title: title })
+        .order(title: :desc)
+        .pluck(:title)
   end
 end
