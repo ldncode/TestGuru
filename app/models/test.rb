@@ -5,6 +5,7 @@ class Test < ApplicationRecord
   has_many :users, through: :test_users
   belongs_to :author, class_name: 'User'
 
+
   def self.category_tests(title)
     joins(:category)
         .where(categories: { title: title })
