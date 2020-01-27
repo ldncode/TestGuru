@@ -5,11 +5,14 @@ class Test < ApplicationRecord
   has_many :users, through: :test_users
   belongs_to :author, class_name: 'User'
 
+  scope :easy, -> { where(level: 0..1) }
+  scope :medium, -> { where(level: 2..4) }
+  scope :hard, -> { where(level: 5..Float::INFINITY) }
 
-  def self.category_tests(title)
-    joins(:category)
-        .where(categories: { title: title })
-        .order(title: :desc)
-        .pluck(:title)
-  end
+  scope :category_tests, -> (category) { joins(:category)
+      .where(categories: { title: title })
+      .order(title: :desc)
+      .pluck(:title)}
+
+
 end
