@@ -5,6 +5,9 @@ class Test < ApplicationRecord
   has_many :users, through: :test_users
   belongs_to :author, class_name: 'User'
 
+  validates :title, presence: true, uniqueness: true
+  validates :level, numericality: {only_integer: true}
+
   scope :easy, -> { where(level: 0..1) }
   scope :medium, -> { where(level: 2..4) }
   scope :hard, -> { where(level: 5..Float::INFINITY) }
@@ -13,6 +16,5 @@ class Test < ApplicationRecord
       .where(categories: { title: title })
       .order(title: :desc)
       .pluck(:title)}
-
 
 end
