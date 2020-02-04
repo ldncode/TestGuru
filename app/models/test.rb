@@ -5,7 +5,7 @@ class Test < ApplicationRecord
   has_many :users, through: :test_users
   belongs_to :author, class_name: 'User'
 
-  validates :title, presence: true, uniqueness: true
+  validates :title, presence: true, uniqueness: { scope: :level }
   validates :level, numericality: {only_integer: true}
 
   scope :easy, -> { where(level: 0..1) }
