@@ -15,7 +15,11 @@ class QuestionsController < ApplicationController
 
   def create
     question = @test.questions.create(question_params)
-    render plain: question.inspect
+    if question.save
+      render plain: question.inspect
+    else
+      render plain: 'Save error!'
+    end
   end
 
   def destroy
