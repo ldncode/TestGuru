@@ -19,7 +19,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    @question = Question.destroy(question_params)
+    @question.destroy
     render plain: 'Question delete!'
   end
 
