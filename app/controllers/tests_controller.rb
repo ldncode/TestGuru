@@ -1,5 +1,6 @@
 class TestsController < ApplicationController
   def index
-    render plain: 'All tests'
+    render json: { tests:  Test.all }
   end
+
 end
