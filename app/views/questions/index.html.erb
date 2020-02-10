@@ -1,6 +1,8 @@
-<h1>Create new question</h1>
+<h1>Questions of test</h1>
 
-<%= form_with model: [@test, @question] do |form| %>
+<%= form_with model: [@test, @questions] do |form| %>
+
+
   <p>
     <%= form.label :body %>
     <%= form.text_field :body %>
