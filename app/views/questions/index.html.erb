@@ -1,13 +1,15 @@
 <h1>Questions of test</h1>
 
-<%= form_with model: [@test, @questions] do |form| %>
+<p>
+  <%= link_to 'New test', new_test_question_path %>
+</p>
 
+<table>
+  <tr>
+    <th>Questions</th>
+    <th colspan="3">Actions</th>
+  </tr>
 
-  <p>
-    <%= form.label :body %>
-    <%= form.text_field :body %>
-  </p><br>
+  <%= render @questions %>
 
-  <p><%= form.submit %></p>
-
-<% end %>
+</table>

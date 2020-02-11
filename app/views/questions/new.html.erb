@@ -1,11 +1,5 @@
 <h1>Create new question</h1>
 
-<%= form_with model: [@test, @question] do |form| %>
-  <p>
-    <%= form.label :body %>
-    <%= form.text_field :body %>
-  </p><br>
+<%= render 'form' %>
 
-  <p><%= form.submit %></p>
-
-<% end %>
+<%= link_to 'Back', test_questions_path %>
