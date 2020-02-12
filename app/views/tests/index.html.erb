@@ -4,12 +4,14 @@
   <tr>
     <th>Title</th>
     <th>Level</th>
+    <th>Questions</th>
   </tr>
 
   <% @tests.each do |test| %>
     <tr>
       <td><%= test.title %></td>
       <td><%= test.level %></td>
+      <td><%= test.questions %></td>
     </tr>
   <% end %>
 </table>
