@@ -1,0 +1,11 @@
+<%= question_header(@question) %>
+
+<%= form_with model: [@test, @question] do |form| %>
+  <p>
+    <%= form.label :body %>
+    <%= form.text_field :body %>
+  </p><br>
+
+  <p><%= form.submit %></p>
+
+<% end %>
