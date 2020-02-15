@@ -9,11 +9,16 @@ class TestsController < ApplicationController
   end
 
   def new
-
+    @test = Test.new
   end
 
   def create
-
+    @test = Test.new(params[:test])
+    if @test.save
+      redirect_to @test
+    else
+      render :new
+    end
   end
 
 end
