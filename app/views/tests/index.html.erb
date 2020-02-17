@@ -7,14 +7,10 @@
     <th>Title</th>
     <th>Level</th>
     <th>Questions</th>
+    <th colspan="3">Actions</th>
   </tr>
 
-  <% @tests.each do |test| %>
-    <tr>
-      <td><%= test.title %></td>
-      <td><%= test.level %></td>
-      <td><%= test.questions.size %></td>
-    </tr>
-  <% end %>
+<%= render @tests %>
 
 </table>
+
