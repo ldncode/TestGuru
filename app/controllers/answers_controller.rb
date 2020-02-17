@@ -31,13 +31,13 @@ class AnswersController < ApplicationController
 
   def destroy
     @answer.destroy
-      redirect_to @answers.question
+      redirect_to @answer.question
   end
 
   private
 
   def find_question
-    @question = Question.find(params[:id])
+    @question = Question.find(params[:question_id])
   end
 
   def set_answer
@@ -45,6 +45,6 @@ class AnswersController < ApplicationController
   end
 
   def answer_params
-    params.require (:answer).permit(:body, :correct)
+    params.require(:answer).permit(:body, :correct)
   end
 end

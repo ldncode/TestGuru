@@ -1,6 +1,8 @@
-<h1>Editing Answer</h1>
+<h1>Edit Answer</h1>
+<p>
+  <%= @answer.question.body %>
+</p>
 
-<%= render 'form', answer: @answer %>
+<%= render 'form' %>
 
-<%= link_to 'Show', @answer %> |
-<%= link_to 'Back', answers_path %>
+<%= link_to 'Back', question_path(@answer.question) %>
