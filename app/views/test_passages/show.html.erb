@@ -1,5 +1,8 @@
 <h1>Passing the <%= @test_passage.test.title %> Test</h1>
 
+<h2><%= @test_passsage.test.questions.index(@test_passage.current_question) + 1 %></h2>
+<p><%= @test_passage.test.questions.size %></p>
+
 <b>
   <%= @test_passage.current_question.body %>
 </b>
@@ -13,4 +16,9 @@
     </p>
   <% end %>
   <p><%= form.submit 'Next' %></p>
+
 <% end %>
+
+<%= link_to  %>
+
+
