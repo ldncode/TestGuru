@@ -2,22 +2,22 @@
 <%= render 'shared/errors', resource: @user %>
 
   <p>
-    <%= form.label :username %>
+    <%= form.label :username %><br>
     <%= form.text_field :username, id: :username %>
   </p>
 
   <p>
-    <%= form.label :email %>
+    <%= form.label :email %><br>
     <%= form.text_field :email, id: :email %>
   </p>
 
   <p>
-    <%= form.label :password %>
+    <%= form.label :password %><br>
     <%= form.password_field :password, id: :user_password %>
   </p>
 
   <p>
-    <%= form.label :password_confirmation %>
+    <%= form.label :password_confirmation %><br>
     <%= form.password_field :password_confirmation, id: :user_password_confirmation %>
   </p>
 
