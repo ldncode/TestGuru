@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :author_tests, class_name: 'Test', foreign_key: 'author_id'
 
   validates :username, presence: true
+  validates :email, presence: true
 
   def passed_tests_level(level)
     tests.where(level: level)
