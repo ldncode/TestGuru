@@ -1,5 +1,7 @@
 <%= form_with url: sessions_path, local: true do |form| %>
-  <%= render 'shared/flash' %>
+  <% if flash[:alert] %>
+    <%= content_tag :p, flash[:alert], class: 'flash alert'  %>
+  <% end %>
 
   <p>
     <%= form.label :email %><br>
