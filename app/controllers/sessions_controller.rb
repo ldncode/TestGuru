@@ -16,7 +16,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    User.find(session[:user_id])
     session[:user_id] = nil
     redirect_to login_path
   end
