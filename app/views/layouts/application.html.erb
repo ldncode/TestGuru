@@ -10,8 +10,11 @@
   </head>
 
   <body>
-  <% if logged_in? %>
-    <p class="nav user">Welcome, <b><%= current_user.username %></b> Guru</p>
+  <% if user_signed_in? %>
+    <p class="nav user">
+      Welcome, <b><%= current_user.email %></b> Guru |
+      <%= link_to 'logout', destroy_user_session_path, method: :delete %>
+    </p>
   <% end %>
 
   <%= render 'shared/navigation' %>
