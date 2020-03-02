@@ -1,4 +1,4 @@
-<%= form_with model: @test, local: true do |form| %>
+<%= form_with model: [:admin, @test], local: true do |form| %>
 <%= render 'shared/errors', resource: @test %>
   <p>
     <%= form.label :title %>

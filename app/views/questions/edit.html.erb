@@ -1,5 +1,7 @@
+<h1>Create New <%= @question.test.title %> Question</h1>
+
 <%= render 'form' %>
 
-<%= link_to 'Back', test_questions_path(@question.test) %>
+<%= link_to 'Back', admin_test_path(@question.test) %>
 
 
