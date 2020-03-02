@@ -1,6 +1,6 @@
 <%= question_header(@question) %>
 
-<%= form_with model: [@test, @question] do |form| %>
+<%= form_with model: [:admin, @test, @question] do |form| %>
   <p>
     <%= form.label :body %>
     <%= form.text_field :body %>

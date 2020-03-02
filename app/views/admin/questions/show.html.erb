@@ -8,10 +8,10 @@
 <%= link_to 'New answer', new_question_answer_path(@question) %>
 
 <ol>
-  <%= render @question.answers %>
+  <%#= render partial: 'answers/answer' %>
 </ol>
 
 <%= link_to 'Back', admin_test_path(@question.test) %>
-<%= link_to 'Edit', edit_question_path(@question) %>
+<%= link_to 'Edit', edit_admin_question_path(@question) %>
 
 
