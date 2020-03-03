@@ -26,13 +26,13 @@ class Admin::QuestionsController < Admin::BaseController
 
    def update
      if @question.update(question_params)
-       redirect_to question_path
+       redirect_to admin_test_questions_path(@question.test)
      end
    end
 
   def destroy
     @question.destroy
-      redirect_to test_questions_path(@question.test)
+      redirect_to admin_test_questions_path(@question.test)
   end
 
   private
