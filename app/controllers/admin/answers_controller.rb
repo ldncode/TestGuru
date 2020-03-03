@@ -1,4 +1,5 @@
 class Admin::AnswersController < Admin::BaseController
+
   before_action :find_question, only: %i[new create]
   before_action :set_answer, only: %i[show edit update destroy]
 
@@ -15,7 +16,7 @@ class Admin::AnswersController < Admin::BaseController
   def create
     @answer = @question.answers.new(answer_params)
     if @answer.save
-      redirect_to admin_questions_path(@question)
+      redirect_to admin_question_path(@answer.question)
     else
       render :new
     end
@@ -23,7 +24,7 @@ class Admin::AnswersController < Admin::BaseController
 
   def update
     if @answer.update(answer_params)
-      redirect_to
+      redirect_to admin_question_path(@answer.question)
     else
       render :edit
     end
@@ -31,7 +32,7 @@ class Admin::AnswersController < Admin::BaseController
 
   def destroy
     @answer.destroy
-      redirect_to
+      redirect_to admin_question_path(@answer.question)
   end
 
   private

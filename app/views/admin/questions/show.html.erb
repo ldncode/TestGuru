@@ -11,6 +11,6 @@
   <%= render partial: 'admin/answers/answer', collection: @question.answers %>
 </ol>
 
-<%= link_to 'Back', admin_test_questions_path(@question.test) %>
+<%= link_to 'Back', admin_test_path(@question.test) %>
 <%= link_to 'Edit', edit_admin_question_path(@question) %>
 
