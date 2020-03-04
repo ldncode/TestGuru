@@ -1,4 +1,11 @@
+<% if user_signed_in? %>
+  <p class="nav user">
+    Welcome, <b><%= current_user.email %></b> Guru |
+    <%= link_to 'logout', destroy_user_session_path, method: :delete %>
+  </p>
+<% end %>
 <h2><%= link_to 'TestGuru', root_path %></h2><br>
+
 
 
 
