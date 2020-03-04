@@ -9,8 +9,8 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    flash[:alert] = "Hello, #{current_user.last_name}!" if current_user.last_name
-    resource.is_a?(Admin) ? admin_tests_path : root_path
+    flash[:alert] = "Hello, #{current_user.first_name}!"
+    resource.admin? ? admin_tests_path : root_path
   end
 
 

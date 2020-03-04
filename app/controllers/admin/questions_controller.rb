@@ -46,7 +46,6 @@ class Admin::QuestionsController < Admin::BaseController
     render plain: 'Question was not found'
   end
 
-
   def question_params
     params.require(:question).permit(:body)
   end
