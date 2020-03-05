@@ -1,0 +1,19 @@
+<p>
+  <strong>Title:</strong>
+  <%= @test.title %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @test.level %>
+</p>
+
+<h2>Questions</h2>
+
+<%= link_to 'New question', new_admin_test_question_path(@test) %>
+
+<ol>
+  <%= render partial: 'admin/questions/question', collection: @test.questions %>
+</ol>
+
+<%= link_to 'Back', admin_tests_path %>

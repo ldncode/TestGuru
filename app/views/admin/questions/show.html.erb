@@ -1,0 +1,16 @@
+<h1><%= @question.test.title %></h1>
+<p>
+  <%= @question.body %>
+</p>
+
+<h2>Answers</h2>
+
+<%= link_to 'New answer', new_admin_question_answer_path(@question) %>
+
+<ol>
+  <%= render partial: 'admin/answers/answer', collection: @question.answers %>
+</ol>
+
+<%= link_to 'Back', admin_test_path(@question.test) %>
+<%= link_to 'Edit', edit_admin_question_path(@question) %>
+
