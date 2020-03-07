@@ -6,6 +6,7 @@ ru:
     attributes:
       test:
         title: "Название"
+        category: "Категория"
 
     errors:
       messages:
