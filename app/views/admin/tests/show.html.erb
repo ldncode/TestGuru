@@ -1,14 +1,14 @@
 <p>
-  <strong>Title:</strong>
+  <strong><%= t('admin.tests.show.title') %>:</strong>
   <%= @test.title %>
 </p>
 
 <p>
-  <strong>Level:</strong>
+  <strong><%= t('admin.tests.show.level') %>:</strong>
   <%= @test.level %>
 </p>
 
-<h2>Questions</h2>
+<h2><%= t('admin.tests.show.qustions') %></h2>
 
 <%= link_to 'New question', new_admin_test_question_path(@test) %>
 

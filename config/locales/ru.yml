@@ -24,6 +24,7 @@ ru:
   tests:
     index:
       header: "Доступные тесты"
+      start: "Старт"
 
   test_passages:
     result:
@@ -31,12 +32,35 @@ ru:
 
   admin:
     tests:
+      test:
+        show: "Открыть"
+        edit: "Редактировать"
+        delete: "Удалить"
       index:
         header: "Доступные тесты"
+        title: "Название"
+        level: "Уровень"
+        questions: "Вопросы"
+        actions: "Действия"
+        new_test: "Создать тест"
+      edit:
+        header: "Редактировать тест"
+      new:
+        header: "Создать новый тест"
+      show:
+        title: "Название"
+        level: "Уровень"
+        qustions: "Вопросы"
       create:
         success: "Тест успешно создан"
+      update:
+        success: "Тест успешно обновлен"
+      destroy:
+        success: "Тест успешно удален"
 
   tests_maler:
     completed_test:
       subject: 'Вы успешно завершили тест на TestGuru!'
+
+
 

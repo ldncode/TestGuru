@@ -31,8 +31,17 @@ en:
     tests:
       index:
         header: "Tricky Tests"
+        title: "Title"
+        level: "Level"
+        questions: "Questions"
+        actions: "Actions"
+        new_test: "New test"
       create:
         success: "Test was successfully created"
+      update:
+        success: "Test successfully updated"
+      destroy:
+        success: "Test successfully removed"
 
   tests_maler:
     completed_test:
