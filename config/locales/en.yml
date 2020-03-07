@@ -33,3 +33,7 @@ en:
         header: "Tricky Tests"
       create:
         success: "Test was successfully created"
+
+  tests_maler:
+    completed_test:
+      subject: 'You just completed the TestGuru test!'

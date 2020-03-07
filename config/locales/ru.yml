@@ -36,3 +36,7 @@ ru:
       create:
         success: "Тест успешно создан"
 
+  tests_maler:
+    completed_test:
+      subject: 'Вы успешно завершили тест на TestGuru!'
+
