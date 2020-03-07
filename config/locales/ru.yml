@@ -31,6 +31,7 @@ ru:
       header: "Тест %{title} успешно завершен!"
 
   admin:
+    nav: "Панель администратора"
     tests:
       test:
         show: "Открыть"
@@ -44,7 +45,7 @@ ru:
         actions: "Действия"
         new_test: "Создать тест"
       edit:
-        header: "Редактировать тест"
+        header: "Редактировать тест %{title}"
       new:
         header: "Создать новый тест"
       show:

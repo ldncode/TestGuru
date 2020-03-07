@@ -22,12 +22,14 @@ en:
   tests:
     index:
       header: "Tricky Tests"
+      start: "Start"
 
   test_passages:
     result:
       header: "The %{title} Test was Completed!"
 
   admin:
+    nav: "AdminPanel"
     tests:
       index:
         header: "Tricky Tests"
