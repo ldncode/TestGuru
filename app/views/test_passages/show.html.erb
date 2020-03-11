@@ -1,6 +1,6 @@
 <h1>Passing the <%= @test_passage.test.title %> Test</h1>
 
-<h2>Current question: <%= @test_passage.test.questions.index(@test_passage.current_question) + 1 %></h2>
+<h2>Current question: <%= @test_passage.test.questions.index(@test_passage.current_question) %></h2>
 <p>All questions: <%= @test_passage.test.questions.size %></p>
 
 <b>
