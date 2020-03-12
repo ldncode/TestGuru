@@ -12,13 +12,17 @@
 
   <body>
 
+  <div class="conteiner">
+
   <%= render 'shared/navigation' %>
 
   <%= render 'shared/flash' %>
 
     <%= yield %>
 
-   <%= render 'shared/footer' %>
+   <% #= render 'shared/footer' %>
+
+  </div>
 
   </body>
 </html>

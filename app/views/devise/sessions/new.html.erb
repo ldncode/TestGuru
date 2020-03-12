@@ -1,26 +1,40 @@
-<h2>Enter the Guru Gates</h2>
+<div class="row justify-content-center mt-3">
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  <div class="col col-md-4">
+    <h2>Enter the Guru Gates</h2>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+    <div class="card border-primary">
+      <div class="card-body">
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+           <div class="form-group">
+              <p>
+                <%= f.label :email %>
+                <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Enter email' %>
+              </p>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+              <p>
+                <%= f.label :password %>
+                <%= f.password_field :password, autocomplete: "of", class: 'form-control' %>
+              </p>
+
+         <% if devise_mapping.rememberable? %>
+            <div class="form-check">
+                <%= f.label :remember_me, class: 'form-check-label' do %>
+                  <%= f.check_box :remember_me, class: 'form-check-input' %>
+                  Remember me
+                <% end %>
+            </div>
+          <% end %>
+
+          <%= f.submit "Enter", class: 'btn btn-primary' %>
+          </div>
+        <% end %>
+      </div>
     </div>
-  <% end %>
 
-  <div class="actions">
-    <%= f.submit "Enter" %>
+    <div class="mt-1"
+      <%= render "devise/shared/links" %>
+    </div>
   </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+</div>
