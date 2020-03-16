@@ -23,6 +23,10 @@ gem 'jbuilder', '~> 2.7'
 #gem 'bcrypt', '~> 3.1.7'
 gem 'devise', '~> 4.0'
 
+gem 'faraday'
+
+gem 'dotenv-rails', groups: [:development, :test]
+
 # LOCALIZATION
 
 gem 'rails-i18n', '~> 6.0.0'
