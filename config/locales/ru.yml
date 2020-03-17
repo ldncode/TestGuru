@@ -34,6 +34,11 @@ ru:
       failure: 'Во время сохранения gist произошла ошибка'
 
   admin:
+    gists:
+      index:
+        question: "Вопрос"
+        url: "Ссылка на Gist"
+        user: "Пользователь"
     nav: "Панель администратора"
     tests:
       test:
