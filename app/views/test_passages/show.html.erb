@@ -10,9 +10,9 @@
     <p>All questions: <%= @test_passage.test.questions.size %></p>
   </div>
 
-   <b>
-     <%= @test_passage.current_question.body %>
-   </b>
+   <p>
+      <b><%= @test_passage.current_question.body %></b>
+   </p>
 
 <%= form_with url: test_passage_path(@test_passage), local: true, method: :put do |form| %>
 
@@ -25,7 +25,9 @@
          </p>
        <% end %>
     </div>
-  <p><%= form.submit 'Next', class: 'btn btn-primary' %></p>
+
+    <p><%= link_to 'Gist Question', gist_test_passage_path(@test_passage), method: :post %></p>
+    <p><%= form.submit 'Next', class: 'btn btn-primary' %></p>
 
 <% end %>
 

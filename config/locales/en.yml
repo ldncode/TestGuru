@@ -27,8 +27,16 @@ en:
   test_passages:
     result:
       header: "The %{title} Test was Completed!"
+    gist:
+      success: 'Gist was successfully created'
+      failure: 'An error occurred while saving gist'
 
   admin:
+    gists:
+      index:
+        question: "Question"
+        url: "Gist URL"
+        user: "User"
     nav: "AdminPanel"
     tests:
       index:

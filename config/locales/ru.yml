@@ -29,8 +29,16 @@ ru:
   test_passages:
     result:
       header: "Тест %{title} успешно завершен!"
+    gist:
+      success: 'Gist успешно сохранен'
+      failure: 'Во время сохранения gist произошла ошибка'
 
   admin:
+    gists:
+      index:
+        question: "Вопрос"
+        url: "Ссылка на Gist"
+        user: "Пользователь"
     nav: "Панель администратора"
     tests:
       test:
