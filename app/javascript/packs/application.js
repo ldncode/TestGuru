@@ -10,6 +10,7 @@ require("channels")
 
 import "bootstrap";
 import "../stylesheets/application"
+import "../utilities/sorting"
 
 document.addEventListener("turbolinks:load", () => {
     $('[data-toggle="tooltip"]').tooltip()
