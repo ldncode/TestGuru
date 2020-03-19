@@ -29,6 +29,8 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem "octokit", "~> 4.0"
 
+gem 'octicons_helper'
+
 # LOCALIZATION
 
 gem 'rails-i18n', '~> 6.0.0'
