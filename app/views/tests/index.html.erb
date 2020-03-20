@@ -5,12 +5,16 @@
 
 
   <table class="table">
-    <thead class="thead-dark">
+    <thead >
       <tr>
-        <th scope="col"><%= t('admin.tests.index.title') %></th>
-        <th scope="col"><%= t('admin.tests.index.level') %></th>
-        <th scope="col"><%= t('admin.tests.index.questions') %></th>
-        <th scope="col"><%= t('admin.tests.index.actions') %></th>
+        <th class="sort-by-title pointer">
+          <%= t('admin.tests.index.title') %>
+          <%= octicon 'arrow-up', class: 'text-success hide' %>
+          <%= octicon 'arrow-down', class: 'text-success hide' %>
+        </th>
+        <th><%= t('admin.tests.index.level') %></th>
+        <th ><%= t('admin.tests.index.questions') %></th>
+        <th><%= t('admin.tests.index.actions') %></th>
       </tr>
      <%= render @tests %>
     </thead>
