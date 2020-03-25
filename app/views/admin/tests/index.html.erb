@@ -1,16 +1,26 @@
-<h1><%= t('.header') %></h1>
+<div class="container">
+  <span class="text-center">
+    <h1><%= t('.header') %></h1>
+  </span>
 
-<%= link_to t('.new_test'), new_admin_test_path %>
+    <p><%= link_to t('.new_test'), new_admin_test_path %></p>
 
-<table>
-  <tr>
-    <th><%= t('.title') %></th>
-    <th><%= t('.level') %></th>
-    <th><%= t('.questions') %></th>
-    <th colspan="4"><%= t('.actions') %></th>
-  </tr>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="sort-by-title pointer">
+            <%= t('.title') %>
+            <%= octicon 'arrow-up', class: 'text-success hide' %>
+            <%= octicon 'arrow-down', class: 'text-success hide' %>
+          </th>
+          <th><%= t('.level') %></th>
+          <th><%= t('.questions') %></th>
+          <th colspan="4"><%= t('.actions') %></th>
+        </tr>
+      </thead>
 
-<%= render @tests %>
+    <%= render @tests %>
 
-</table>
+    </table>
 
+</div>

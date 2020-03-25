@@ -10,6 +10,8 @@ require("channels")
 
 import "bootstrap";
 import "../stylesheets/application"
+import "../utilities/sorting"
+import "../utilities/password"
 
 document.addEventListener("turbolinks:load", () => {
     $('[data-toggle="tooltip"]').tooltip()
