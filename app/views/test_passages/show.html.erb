@@ -4,6 +4,10 @@
      <h1>Passing the <%= @test_passage.test.title %> Test</h1>
    </span>
 
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+  </div><br>
+
   <div class="col">
     <h2>Current question: <%= @test_passage.test.questions.index(@test_passage.current_question) %></h2>
 
