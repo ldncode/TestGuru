@@ -39,6 +39,8 @@ en:
         user: "User"
     nav: "AdminPanel"
     tests:
+      form_inline:
+        submit: "Ok"
       index:
         header: "Tricky Tests"
         title: "Title"

@@ -8,6 +8,10 @@ document.addEventListener('turbolinks:load', function() {
     }
 
     function checkMatch() {
+        if (password_confirmation.value == '') {
+            password_confirmation.classList.remove('is-valid', 'is-invalid')
+            return
+        }
         if (password.value && password_confirmation.value) {
             const valid = password.value == password_confirmation.value
 

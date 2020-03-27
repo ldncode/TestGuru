@@ -41,6 +41,8 @@ ru:
         user: "Пользователь"
     nav: "Панель администратора"
     tests:
+      form_inline:
+        submit: "Ок"
       test:
         show: "Открыть"
         edit: "Редактировать"
