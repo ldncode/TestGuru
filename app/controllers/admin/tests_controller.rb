@@ -14,7 +14,6 @@ class Admin::TestsController < Admin::BaseController
   end
 
   def create
-    binding.pry
     @test = current_user.author_tests.new(test_params)
     if @test.save
       redirect_to [:admin, @test], notice: t('.success')
