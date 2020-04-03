@@ -3,6 +3,8 @@ en:
 
   helpers:
     submit:
+      feedback:
+        create: "Send"
       test:
         create: "Create Test"
         update: "Update Test"
@@ -16,6 +18,8 @@ en:
         other: "%{count} errors detected"
 
     label:
+      feedback:
+        message: "Message"
       test:
         title: "Title"
         level: "Level"
