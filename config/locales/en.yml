@@ -8,6 +8,8 @@ en:
         update: "Update Test"
 
   shared:
+    navigation:
+      feedback: "Feedback"
     errors:
       header:
         one: "%{count} error detected"
@@ -58,3 +60,10 @@ en:
   tests_maler:
     completed_test:
       subject: 'You just completed the TestGuru test!'
+
+  feedbacks:
+    new:
+      header: "Feedback"
+      submit: "Send"
+    create:
+      sended: "The message was sended"
