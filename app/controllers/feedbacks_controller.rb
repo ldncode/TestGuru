@@ -9,7 +9,7 @@ class FeedbacksController < ApplicationController
     @feedback = current_user.feedbacks.new(feedback_params)
 
     if @feedback.save
-      FeedbacksMailer.send_feedback(@feedback)
+      FeedbacksMailer.send_feedback(@feedback).deliver_now
 
       redirect_to new_feedback_path, notice: t('.sended')
     else
