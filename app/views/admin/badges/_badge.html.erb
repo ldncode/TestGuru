@@ -1,0 +1,11 @@
+<tr>
+  <td><%= badge.name %></td>
+  <td><%= image_tag badge.image, size: 30 %></td>
+  <td><%= link_to t('other.show'), admin_badge_path(badge) %></td>
+  <td><%= link_to t('other.edit'), edit_admin_badge_path(badge) %></td>
+  <td><%= link_to t('other.delete'),
+                  admin_badge_path(badge),
+                  method: :delete,
+                  data: { confirm: t('other.confirm') } %>
+  </td>
+</tr>
