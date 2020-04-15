@@ -1,6 +1,17 @@
 en:
   hello: "Hello world"
 
+  other:
+    back: "Back"
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    confirm: "Are you sure?"
+    start: "Start"
+    create: "Create"
+    action: "Action"
+
+
   helpers:
     submit:
       feedback:
@@ -12,6 +23,7 @@ en:
   shared:
     navigation:
       feedback: "Feedback"
+      badges: "Badges"
     errors:
       header:
         one: "%{count} error detected"
@@ -38,6 +50,11 @@ en:
       failure: 'An error occurred while saving gist'
 
   admin:
+    badges:
+      index:
+        header: "Badge"
+      show:
+        rule: "Rule"
     gists:
       index:
         question: "Question"
@@ -71,3 +88,9 @@ en:
       submit: "Send"
     create:
       sended: "The message was sended"
+
+  badges:
+    index:
+      header: "Badges"
+      name: "Name"
+      image: "Image"

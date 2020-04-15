@@ -11,7 +11,7 @@ class Admin::BadgeRulesController < Admin::BaseController
     @badge.build_rule(badge_rule_params)
 
     if @badge.rule.save
-      redirect_to admin_badges_path, notice: I18n.t('.created')
+      redirect_to admin_badges_path
     else
       render :new
     end
@@ -21,7 +21,7 @@ class Admin::BadgeRulesController < Admin::BaseController
 
   def update
     if @rule.update(badge_rule_params)
-      redirect_to admin_badge_path(@badge), notice: I18n.t('.updated')
+      redirect_to admin_badge_path(@badge)
     else
       render :edit
     end
@@ -29,7 +29,7 @@ class Admin::BadgeRulesController < Admin::BaseController
 
   def destroy
     @rule.destroy
-    redirect_to admin_badge_path(@badge), notice: I18n.t('.destroyed')
+    redirect_to admin_badge_path(@badge)
   end
 
   private

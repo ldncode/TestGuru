@@ -20,4 +20,9 @@ class Test < ApplicationRecord
     category_tests(title).order(title: :desc).pluck(:title)
   end
 
+
+  def self.levels
+    all.pluck(:level).uniq.sort
+  end
+
 end

@@ -1,6 +1,19 @@
 ru:
   hello: "Привет мир"
 
+  nav:
+    badges: "Бейджи"
+
+  other:
+    back: "Назад"
+    show: "Показать"
+    edit: "Редактировать"
+    delete: "Удалить"
+    confirm: "Вы уверены?"
+    start: "Начать"
+    create: "Создать"
+    action: "Действие"
+
   helpers:
     submit:
       feedback:
@@ -20,6 +33,7 @@ ru:
   shared:
     navigation:
       feedback: "Обратная связь"
+      badges: "Бейджи"
     errors:
       header:
         few: "Обнаружено %{count} ошибки"
@@ -40,6 +54,13 @@ ru:
       failure: 'Во время сохранения gist произошла ошибка'
 
   admin:
+    badges:
+      index:
+        header: "Бейдж"
+      new:
+        header: "Бейдж"
+      show:
+        rule: "Правила"
     gists:
       index:
         question: "Вопрос"
@@ -84,6 +105,12 @@ ru:
       header: "Обратная связь"
     create:
       sended: "Сообщение отправлено"
+
+  badges:
+    index:
+      header: "Бэйджи"
+      name: "Название"
+      image: "Изображение"
 
 
 
