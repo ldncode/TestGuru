@@ -54,6 +54,9 @@ ru:
       failure: 'Во время сохранения gist произошла ошибка'
 
   admin:
+    badge_rules:
+      new:
+        header: "Заголовок"
     badges:
       index:
         header: "Бейдж"

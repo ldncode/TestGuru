@@ -50,6 +50,9 @@ en:
       failure: 'An error occurred while saving gist'
 
   admin:
+    badge_rules:
+      new:
+        header: "Header"
     badges:
       index:
         header: "Badge"
