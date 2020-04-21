@@ -4,7 +4,7 @@ class Category < ApplicationRecord
   default_scope { order(title: :asc) }
 
   def self.list
-    all.pluck(:title, :id)
+    select(:title)
   end
 
 end

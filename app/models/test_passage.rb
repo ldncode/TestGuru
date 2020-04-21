@@ -24,6 +24,10 @@ class TestPassage < ApplicationRecord
     score > SUCCESS_SCORE
   end
 
+  def timeaut
+    self.created_at + test.timer <= Time.now
+  end
+
   private
 
   def before_validation_set_first_question

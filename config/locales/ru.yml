@@ -45,6 +45,7 @@ ru:
     index:
       header: "Доступные тесты"
       start: "Старт"
+      timer: "Таймер"
 
   test_passages:
     result:
@@ -84,6 +85,7 @@ ru:
         questions: "Вопросы"
         actions: "Действия"
         new_test: "Создать тест"
+        timer: "Таймер"
       edit:
         header: "Редактировать тест %{title}"
       new:

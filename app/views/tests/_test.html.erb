@@ -2,6 +2,7 @@
   <td><%= test.title %></td>
   <td><%= test_level(test) %></td>
   <td><%= test.questions.size %></td>
+  <td><%= test.timer %></td>
   <td><%= button_to t('tests.index.start'), start_test_path(test), class: 'btn btn-dark' %></td>
 </tr>
 

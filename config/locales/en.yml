@@ -41,6 +41,7 @@ en:
     index:
       header: "Tricky Tests"
       start: "Start"
+      timer: "Timer"
 
   test_passages:
     result:
@@ -74,6 +75,7 @@ en:
         questions: "Questions"
         actions: "Actions"
         new_test: "New test"
+        timer: "Timer"
       create:
         success: "Test was successfully created"
       update:

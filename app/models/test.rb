@@ -15,6 +15,8 @@ class Test < ApplicationRecord
   scope :category_tests, -> (title) { joins(:category)
                                      .where(categories: { title: title }) }
 
+  scope :questions_tests, -> { where(test_passages).order(questions.body) }
+
 
   def self.category_title(title)
     category_tests(title).order(title: :desc).pluck(:title)
@@ -22,7 +24,7 @@ class Test < ApplicationRecord
 
 
   def self.levels
-    all.pluck(:level).uniq.sort
+    select(:level).distinct
   end
 
 end
