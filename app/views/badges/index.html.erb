@@ -1,0 +1,13 @@
+<h1><%= t('.header') %></h1>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th><%= t('.name') %></th>
+    <th><%= t('.image') %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render @badges %>
+  </tbody>
+</table>

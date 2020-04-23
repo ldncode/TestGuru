@@ -30,8 +30,14 @@ Rails.application.routes.draw do
 
     resources :gists, only: :index
 
+    resources :badges do
+      resources :badge_rules, as: :rule, path: :rules, except: %i[index show]
+    end
+
   end
 
   resources :feedbacks, only: %i[new create]
+
+  resources :badges, only: :index
 
 end

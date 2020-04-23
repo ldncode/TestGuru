@@ -15,9 +15,16 @@ class Test < ApplicationRecord
   scope :category_tests, -> (title) { joins(:category)
                                      .where(categories: { title: title }) }
 
+  scope :questions_tests, -> { where(test_passages).order(questions.body) }
+
 
   def self.category_title(title)
     category_tests(title).order(title: :desc).pluck(:title)
+  end
+
+
+  def self.levels
+    select(:level).distinct
   end
 
 end

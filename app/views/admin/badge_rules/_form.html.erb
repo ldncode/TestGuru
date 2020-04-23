@@ -1,0 +1,26 @@
+<%= form_with(model: [@badge.rule], url: rule_path, local: true) do |f| %>
+  <%= render 'shared/errors', resource: @badge.rule %>
+
+  <%= f.hidden_field :rule_type %>
+
+  <% if @badge.rule.rule_type == 'category' %>
+    <div class="form-group col-4">
+      <%= f.label :rule_value %>
+      <%= f.select :rule_value, @categories, class: 'form-control' %>
+    </div>
+  <% elsif @badge.rule.rule_type == 'first_try' %>
+    <div class="form-check col-4">
+      <%= f.check_box :rule_value, checked_value: 'true', class: 'form-check-input' %>
+      <%= f.label :rule_value, class: 'form-check-label' %>
+    </div>
+  <% elsif @badge.rule.rule_type == 'level' %>
+    <div class="form-group col-4">
+      <%= f.label :rule_value %>
+      <%= f.select :rule_value, @levels, class: 'form-control' %>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>

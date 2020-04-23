@@ -1,6 +1,17 @@
 en:
   hello: "Hello world"
 
+  other:
+    back: "Back"
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    confirm: "Are you sure?"
+    start: "Start"
+    create: "Create"
+    action: "Action"
+
+
   helpers:
     submit:
       feedback:
@@ -12,6 +23,7 @@ en:
   shared:
     navigation:
       feedback: "Feedback"
+      badges: "Badges"
     errors:
       header:
         one: "%{count} error detected"
@@ -29,6 +41,7 @@ en:
     index:
       header: "Tricky Tests"
       start: "Start"
+      timer: "Timer"
 
   test_passages:
     result:
@@ -38,6 +51,14 @@ en:
       failure: 'An error occurred while saving gist'
 
   admin:
+    badge_rules:
+      new:
+        header: "Header"
+    badges:
+      index:
+        header: "Badge"
+      show:
+        rule: "Rule"
     gists:
       index:
         question: "Question"
@@ -54,6 +75,7 @@ en:
         questions: "Questions"
         actions: "Actions"
         new_test: "New test"
+        timer: "Timer"
       create:
         success: "Test was successfully created"
       update:
@@ -71,3 +93,9 @@ en:
       submit: "Send"
     create:
       sended: "The message was sended"
+
+  badges:
+    index:
+      header: "Badges"
+      name: "Name"
+      image: "Image"

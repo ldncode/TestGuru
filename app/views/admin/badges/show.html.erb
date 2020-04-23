@@ -1,0 +1,15 @@
+<h1><%= @admin_badge.name %></h1>
+
+<p><%= image_tag @admin_badge.image, size: 60 %></p>
+
+<h3><%= t('.rule') %></h3>
+<% if @admin_badge.rule.nil? %>
+  <div class="btn-group" role="group">
+    <% @rule_types.each do |rule| %>
+      <%= link_to rule, new_admin_badge_rule_path(@admin_badge, badge_rule: { rule_type: rule }), class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+<% else %>
+  <%= link_to @admin_badge.rule.rule_type, edit_admin_badge_rule_path(@admin_badge, @admin_badge.rule), class: 'btn btn-primary' %>
+  <%= link_to t('other.delete'), admin_badge_rule_path(@admin_badge, @admin_badge.rule), method: :delete, data: { confirm: t('other.confirm') }, class: 'btn btn-danger' %>
+<% end %>

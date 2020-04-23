@@ -1,0 +1,16 @@
+<h1><%= t('.header') %></h1>
+
+<p><%= link_to t('other.create'), new_admin_badge_path, class: 'btn btn-outline-primary' %></p>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th><%= t('badges.index.name') %></th>
+    <th><%= t('badges.index.image') %></th>
+    <th colspan="3"><%= t('other.action') %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render @admin_badges %>
+  </tbody>
+</table>

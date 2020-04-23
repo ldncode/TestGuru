@@ -14,6 +14,7 @@ import "../utilities/sorting"
 import "../utilities/password"
 import "../utilities/form_inline"
 import "../utilities/progress_bar"
+import "../utilities/timer"
 
 document.addEventListener("turbolinks:load", () => {
     $('[data-toggle="tooltip"]').tooltip()
